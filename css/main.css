@@ -1,0 +1,32 @@
+body {
+    margin:0;
+}
+
+h1 {
+    /* text-decoration: underline; */
+    border-bottom-style: double;
+    border-bottom-width: 10px;
+    margin:0;
+    padding:0;
+    
+}
+p {
+    font-family:fantasy;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+p.section2 {
+    font-family:monospace;
+    margin-block-start: 2em;
+    
+}
+
+P#teaser {
+    font-weight: bold;
+    font-size:1.25em;
+}
+
+p {
+    font-family:sans-serif
+}
