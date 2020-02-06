@@ -1,6 +1,6 @@
 body {
     margin:0;
-    width:80%;
+    /* width:80%; */
     margin-left:auto;
     margin-right:auto;
 }
@@ -13,11 +13,18 @@ h1 {
     padding:0;
     
 }
+div.flexContainer {
+    display:flex;
+    flex-wrap: wrap;
+}
 div.imgContainer {
-    width:80%;
+    
     margin-left:auto;
     margin-right:auto;
-    max-width:800px;
+    /*max-width:800px;*/
+    align-self:center;
+
+    flex:100%;
 }
 
 div.imgContainer img{
@@ -45,4 +52,25 @@ P#teaser {
 
 p {
     font-family:sans-serif
+}
+
+* { color: red; }
+
+@media screen and (min-width: 800px) {
+    * { color: green; }
+    div.imgContainer {
+        flex:50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    * { color: blue; }
+    div.imgContainer {
+        flex:25%;
+    }
+}
+@media print {
+  * {
+        display:none;
+    }
 }
